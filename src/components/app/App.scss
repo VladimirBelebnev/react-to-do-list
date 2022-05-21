@@ -5,8 +5,12 @@
 	background-color: #fff;
 	border-radius: 15px;
 	padding: 30px;
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.3);
 	&-header {
 		font-size: 32px;
+		font-weight: 700;
 		text-align: center;
 		margin: 0;
 		padding: 0;
@@ -14,7 +18,8 @@
 	&-desc {
 		font-size: 18px;
 		padding: 0;
-		margin: 15px 0 0 0;
+		font-weight: 400;
+		margin: 30px 0 0 0;
 		line-height: 150%;
 	}
 }
