@@ -13,6 +13,7 @@ const App = () => {
 				id: Math.random().toString(36).substr(2, 9),
 				task: userInput,
 				complete: false,
+				star: false,
 				index: 1,
 			};
 			setTodos([...todos, newItem]);
@@ -21,6 +22,12 @@ const App = () => {
 
 	const removeTask = (id) => {
 		setTodos([...todos.filter((task) => task.id !== id) ]);
+	};
+
+	const handleToggleStar = (id) => {
+		setTodos([...todos.map((task) =>
+			task.id === id ? { ...task, star: !task.star } : { ...task }
+		)])
 	};
 
 	const handleToggle = (id) => {
@@ -43,6 +50,7 @@ const App = () => {
 						task={task}
 						key={task.id}
 						toggleTask={handleToggle}
+						toggleStar={handleToggleStar}
 						removeTask={removeTask}
 						index={++i}
 					/>
