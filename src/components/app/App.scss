@@ -1,0 +1,23 @@
+.App {
+	max-width: 600px;
+	width: 100%;
+	margin: 100px auto;
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 30px;
+	&-header {
+		font-size: 32px;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+	&-desc {
+		font-size: 18px;
+		padding: 0;
+		margin: 15px 0 0 0;
+		line-height: 150%;
+	}
+}
+
+
+
