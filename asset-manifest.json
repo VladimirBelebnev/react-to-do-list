@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-to-do-list/static/css/main.77ca1210.css",
+    "main.js": "/react-to-do-list/static/js/main.cef78702.js",
+    "static/media/star.png": "/react-to-do-list/static/media/star.d0cbd94e0a4a62fc2bf4.png",
+    "index.html": "/react-to-do-list/index.html",
+    "main.77ca1210.css.map": "/react-to-do-list/static/css/main.77ca1210.css.map",
+    "main.cef78702.js.map": "/react-to-do-list/static/js/main.cef78702.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77ca1210.css",
+    "static/js/main.cef78702.js"
+  ]
+}
