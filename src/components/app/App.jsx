@@ -22,6 +22,7 @@ const App = () => {
 			setTodosFunc([...todos, newTask]);
 		}
 	};
+	
 
 	const removeTask = (id) => {
 		setTodosFunc([...todos.filter((task) => task.id !== id)]);
