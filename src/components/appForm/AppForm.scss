@@ -1,0 +1,94 @@
+.App-form {
+    max-width: 570px;
+    width: 100%;
+    border-radius: 15px;
+    color: #000;
+    border: 1px solid #333;
+    margin-top: 15px;
+    padding: 15px;
+    font-size: 18px;
+    &-count {
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
+.App {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-btn {
+        margin-top: 15px;
+        background: linear-gradient(45deg, #f99f56 0%, #fec045 100%);
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 18px;
+        cursor: pointer;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 15px;
+    }
+    &-btn:hover {
+        background: linear-gradient(90deg, #f99f56 100%, #fec045 0%);
+    }
+}
+
+@media (max-width: 962px) {
+    .App-form {
+        max-width: 420px;
+        padding: 15px;
+        font-size: 16px;
+        &-count {
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+    .App {
+        &-btn {
+            margin-top: 15px;
+            font-size: 16px;
+            padding: 10px 25px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .App-form {
+        max-width: 370px;
+        padding: 10px;
+        font-size: 14px;
+        &-count {
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+
+    .App {
+        &-btn {
+            margin-top: 10px;
+            font-size: 14px;
+            padding: 10px 25px;
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .App-form {
+        max-width: 260px;
+        padding: 10px;
+        font-size: 13px;
+        &-count {
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+    .App {
+        &-btn {
+            margin-top: 8px;
+            font-size: 13px;
+            padding: 8px 25px;
+        }
+    }
+}

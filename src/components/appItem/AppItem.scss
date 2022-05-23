@@ -1,0 +1,113 @@
+.App-item {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-trash {
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+    }
+    &-wrapper {
+        width: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-star {
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+    }
+    &-star.show {
+        animation: 1.5s show ease;
+    }
+    &-text {
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: 400;
+    }
+    &-text.complete {
+        text-decoration: line-through;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 962px) {
+    .App-item {
+        margin-top: 10px;
+       &-trash {
+           width: 24px;
+           height: 24px;
+       }
+
+       &-wrapper {
+           width: 60px;
+       }
+
+       &-star {
+           width: 24px;
+           height: 24px;
+       }
+       &-text {
+           font-size: 18px;
+       }
+    }
+}
+
+@media (max-width: 550px) {
+    .App-item {
+        margin-top: 10px;
+
+        &-trash {
+            width: 24px;
+            height: 24px;
+        }
+
+        &-wrapper {
+            width: 60px;
+        }
+
+        &-star {
+            width: 24px;
+            height: 24px;
+        }
+
+        &-text {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 470px) {
+    .App-item {
+        margin-top: 8px;
+        &-trash {
+            width: 18px;
+            height: 18px;
+        }
+        &-wrapper {
+            width: 44px;
+        }
+
+        &-star {
+            width: 18px;
+            height: 18px;
+        }
+
+        &-text {
+            font-size: 13px;
+        }
+    }
+}
