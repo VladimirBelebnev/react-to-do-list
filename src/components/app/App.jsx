@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import AppForm from '../appForm/AppForm';
 import AppItem from '../appItem/AppItem';
-
 import './App.scss';
 
 const App = () => {
